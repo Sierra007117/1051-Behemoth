@@ -4,10 +4,12 @@
 #include <TimeLib.h>                 
 #include <LiquidCrystal.h>  
 LiquidCrystal lcd(D6, D5, D1, D2, D3, D4); 
-
-
-char* ssid = "";  //wifi ssid
-char* password = "";   //wifi password
+#include "WAC.h"
+const char *ssid = SSID;
+const char *password = PW;
+//Create WAC.h to store creds
+//#define SSID "Wireless Access Point"
+//#define PW "Password"
 
 WiFiUDP ntpUDP;
 
